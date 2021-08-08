@@ -1,102 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Système de Gestion de Base de Données</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  
-</head>
-
-<body>
-
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container d-flex">
-      <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">simplon@contact.com</a>
-        <i class="icofont-phone"></i> +225 05 15 48 8 55
-      </div>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
-      <h1 class="logo mr-auto"><a href="index.html">SGBD</a></h1>
-      
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
+<?php 
+    include('layouts/header.php')
+?>
+<!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-    <div class="container"="zoom-out"-delay="100">
-      <h1>Tout savoir sur  <span>SGBD</spa>
+    <div class="container">
+      <h1>Qu'est ce qu'un <span>SGBD</span> ?
       </h1>
       <h2>La veille technologique du Système de Gestion de Base de Données</h2>
-      <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Commencer</a>
-       
-      </div>
     </div>
   </section><!-- End Hero -->
-
   <main id="main">
-
     <!-- ======= About Section ======= -->
 
     <section id="about" class="about section-bg">
-      <div class="container"="fade-up">
-
-        <div class="section-title">
-  
-          <h3>Qu'est ce que le  <span>SGBD</span></h3>
-        
-        </div><br><br>
-
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6"="zoom-out"-delay="100">
+          <div class="col-lg-6">
             <img src="assets/img/about.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"="fade-up"-delay="100">
             <p style="justify-content: stretch;">
               <!-- Le Système de Gestion de Gase de Données (SGBD) ou SGBD en anglais fait référence à la technologie de stockage et de récupération des données des utilisateurs avec la plus grande efficacité ainsi que des mesures de sécurité appropriées. Ce didacticiel explique les bases du SGBD telles que son architecture, les modèles de données, les schémas de données, l'indépendance des données, le modèle E-R, le modèle de relation, la conception de base de données relationnelle, le stockage et la structure des fichiers et bien plus encore. -->
-              Les Systèmes de Gestion de Base de Données (SGBD) ou SGBD en anglais sont les logiciels intermédiaires entre les utilisateurs et les bases de données. 
-              Une base de données est un magasin de données composé de plusieurs fichiers manipulés exclusivement 
-              par le SGBD. Ce dernier cache la complexité de manipulation des 
-              structures de la base de données en mettant à disposition une vue synthétique du contenu.
+              Les Systèmes de Gestion de Base de Données (SGBD) ou DBMS en anglais sont les logiciels intermédiaires entre les utilisateurs et les bases de données. 
             L'ensemble SGBD et base de données est destiné à permettre le stockage de données d'une
              manière offrant de nombreux avantages par rapport à un enregistrement conventionnel dans
               des fichiers. Il permet d'obtenir et de modifier rapidement des données, de les partager
@@ -112,7 +37,7 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
-      <div class="container"="fade-up">
+      <div class="container">
         <div class="section-title1">
           <h3>Les différents type de SGBD</h3>
           <p>
@@ -204,17 +129,8 @@
             </li>
           </ul>
         </div><br><br>
-
-        <div class="section-title1">
-          <h3>Applications du SGBD</h3>
-          <p>Un SGBD permet d'enregistrer des données, 
-            puis de les rechercher, de les modifier et de créer automatiquement des comptes 
-            rendus du contenu de la base de données. 
-            Il permet de spécifier les types de données, la structure des données contenues dans la base de données, ainsi que des règles de cohérence telles que l'absence de redondance</p>
-        </div><br><br>
-
         <div class="row">
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"="zoom-in"-delay="100">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
              
               <h4><a href="">Propriétés ACID  </a></h4>
@@ -222,93 +138,49 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"="zoom-in"-delay="200">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
               <h4><a href="">Accès multi-utilisateur et simultané  </a></h4>
               <p>Le SGBD prend en charge l'environnement multi-utilisateur et leur permet d'accéder et de manipuler des données en parallèle. Bien qu'il existe des restrictions sur les transactions lorsque les utilisateurs tentent de traiter le même élément de données, mais les utilisateurs n'en sont toujours pas conscients.</p>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 "="zoom-in"-delay="300">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 ">
             <div class="icon-box">
               <h4><a href="">Vues multiples </a></h4>
               <p>Le SGBD offre plusieurs vues pour différents utilisateurs. Un utilisateur qui est dans le département des ventes aura une vue de la base de données différente de celle d'une personne travaillant dans le département de production. Cette fonctionnalité permet aux utilisateurs d'avoir une vue concentrée de la base de données en fonction de leurs besoins.</p>
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4"="zoom-in"-delay="100">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
               <h4><a href="">Sécurité </a></h4>
               <p>Des fonctionnalités telles que les vues multiples offrent une sécurité dans une certaine mesure où les utilisateurs ne peuvent pas accéder aux données d'autres utilisateurs et services. Le SGBD propose des méthodes pour imposer des contraintes lors de la saisie des données dans la base de données et de leur récupération à un stade ultérieur. </p>
             </div>
           </div>
-
-         
-
         </div>
 
       </div>
     </section><!-- End of service Section -->
     
     <section id="portfolio" class="portfolio">
-      <div class="container"="fade-up">
-
-        <div class="section-title1">
-          
-          <h3>Cible & Condition  <span>préalabe</span></h3>
-          <p>Ce didacticiel SGBD aidera particulièrement les diplômés en informatique à comprendre les concepts de base à avancés liés aux systèmes de gestion de base de données.Pour les conditions préalables
-Avant de commencer ce didacticiel, il est recommandé de bien comprendre les concepts informatiques de base tels que la mémoire principale, la mémoire secondaire et les structures de données et les algorithmes.
-</p>
-        </div>
+      <div class="container">
          <div class="section-title1">
-          
           <h3>Quelque SGBD</h3>
-<ul>
+    <ul>
  <li><a href="#">Microsoft Access</a></li>
  <li><a href="">SQL Server</a></li> 
  <li><a href="">MySQL</a></li>
  <li><a href="">Oracle Database</a></li>
 </ul>
-<ol>
-  
+<ol> 
 </ol>
         </div>
-
-
-
         </div>
-
       </div>
     </section>
-
-   
-   
-
-   
-   
-
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-   
-    
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Système de Gestion de Base se Données</span></strong>. Tous droits réservés 
-      </div>
-      <div class="credits">
-       
-        Designé par <a href="https://toto.com">mtnacademy</a>
-      </div>
-    </div>
-  </footer>
-
-
-
-
-
-</body>
-
-</html>
+<?php 
+   include('layouts/footer.php') 
+?>

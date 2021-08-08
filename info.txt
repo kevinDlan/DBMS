@@ -1,0 +1,6 @@
+Base de données Def :
+C’est un ensemble de données logiquement organisé pour 
+être exploité au moyen d’un logiciel appelé système de 
+gestion de base de donnée.
+
+Type de Base de données : 

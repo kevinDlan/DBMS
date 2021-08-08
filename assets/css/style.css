@@ -928,6 +928,9 @@ section {
   color: #222222;
   transition: ease-in-out 0.3s;
 }
+h4 a:hover{
+  text-decoration: none;
+}
 
 .services .icon-box p {
   line-height: 24px;
